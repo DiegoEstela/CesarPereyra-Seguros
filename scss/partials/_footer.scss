@@ -1,0 +1,149 @@
+//Footer
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #002936;
+    .footerInfo{
+        width: 100%;
+        background-color: #002936;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 4vh;
+        @media only screen and (max-width:700px) {
+            padding-top: 1vh;
+        }
+        
+        .footerMobil{
+            display: none;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            @media only screen and (max-width:700px) {
+                display:block;
+                padding: 1vh 0;
+            }
+        }
+        .footerAcerca{
+            margin: 1vh 1vw;
+            padding: 1vh 1vw;
+            @media only screen and (max-width:700px) {
+                display:none;
+            }
+            .ulAcerca{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                line-height: 1.5em;
+                font-weight: bold;
+                color: white;
+                font-size: 1em;
+                @media only screen and (max-width:700px) {
+                    flex-direction: row;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                li{
+                    color:white;
+                    text-align: center;
+                    list-style: none;
+                    font-weight: normal;
+                    font-size: 0.8em;
+                    @media only screen and (max-width:700px) {
+                        display: none;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+        .footerSeguros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0vh auto;
+            @media only screen and (max-width:700px) {
+                display: none;
+                
+            }
+            p{
+                color: white;
+                font-weight: bold;
+                text-align: left;
+                margin-left: -45vw;
+                font-size: 1em;
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: flex-start;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    flex-direction:column;
+                    justify-content: center;
+                    padding: 0vh 3vw;
+                    font-weight: bold;
+                    font-size: 1em;
+                    li{
+                        color:white;
+                        font-weight: normal;
+                        font-size: 0.8em;
+                        a{
+                            text-decoration: none;
+                            color: white;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footerRedes{
+        width: 100%;
+        background-color: #002936;
+        color: white;
+        border-top: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        p{
+            color: white;
+            text-align: left;
+            padding: 1vw 1vh;
+            font-size: 0.8em;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            a{
+                text-decoration: none;
+                color: white;
+                #redes{
+                    color: white;
+                    background-color: rgba(128, 128, 128, 0.755);
+                    border-radius: 50%;
+                    padding: 2vh 1vw;
+                    margin: 1vh 1vw;
+                    font-size: 0.8em;
+                    @media only screen and (max-width:700px){
+                        background-color: transparent;
+                    }
+                    }
+            }
+        }
+    }
+}

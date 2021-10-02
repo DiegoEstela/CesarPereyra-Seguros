@@ -1,0 +1,113 @@
+//Preguntas Frecuentes
+#FqContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e656d;
+  padding-bottom: 8vh;
+  .FqTitulo {
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 9vw;
+    padding-top: 16vh;
+    @media only screen and(max-width:500px) {
+      text-align: center;
+    }
+  }
+  .QtContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 1vh 9vw;
+    align-items: center;
+    margin-top: 2vh;
+    @media only screen and(max-width:800px) {
+      flex-direction: column;
+    }
+    #QtIcon1 {
+      color: #ef775f;
+      font-size: 2em;
+      background-color: white;
+      border-radius: 50%;
+      margin: 1vh 2vw;
+      padding: 3vh 2vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
+    }
+    #QtIcon2 {
+      color: #ef775f;
+      font-size: 2em;
+      background-color: white;
+      border-radius: 50%;
+      margin: 1vh 2vw;
+      padding: 3vh 1vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
+    }
+    #QtIcon3 {
+      color: #ef775f;
+      font-size: 2em;
+      background-color: white;
+      border-radius: 50%;
+      margin: 1vh 2vw;
+      padding: 3vh 1.5vw;
+      @media only screen and(max-width:500px) {
+        background-color: transparent;
+      }
+    }
+  }
+  .QtSubContainer {
+    display: flex;
+    flex-direction: column;
+    .Qt {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: white;
+      text-align: left;
+      margin-bottom: 0vh;
+      animation-duration: 3s;
+      animation-name: slidein1;
+      @keyframes slidein1 {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 100%;
+              }
+          }
+      @media only screen and(max-width:800px) {
+        text-align: center;
+      }
+      .fas fa-arrow-down {
+        color: white;
+        padding: 1vh 1vw;
+      }
+    }
+    .qt1, .qt2, .qt3, .qt4, .qt5, .qt6 {
+      display: none;
+      font-size: 1em;
+      color: white;
+      text-align: left;
+      width: 70%;
+      animation-duration: 1s;
+      animation-name: slidein1;
+      @keyframes slidein1 {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 100%;
+              }
+          }
+          
+      @media only screen and(max-width:800px) {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+

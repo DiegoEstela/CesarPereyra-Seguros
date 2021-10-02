@@ -1,0 +1,142 @@
+//Contacto
+.ContactoForm{
+    background-image: url("https://i.ibb.co/KKMVjXb/contacto-Back-G.png");
+    background-size: cover;
+    padding: 7vh 0vw;
+    .Contacto{
+        color: white;
+        font-weight: bold;
+        font-size: 2em;
+        padding: 2vh 2vw;
+        padding-top: 9vh;
+        text-align: center;
+        animation-duration: 1s;
+        animation-name: slidein1;
+        @keyframes slidein1 {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 100%;
+                }
+            }
+    }
+    .Formulario{
+        width: 40%;
+        margin: 2vh auto;
+        background-color: #002936bd;
+        padding: 3vh 3vw;
+        border-radius: 10px;
+        @media only screen and (max-width:900px){
+            width: 80%;
+        }
+        .inputForm{
+            display: flex;
+            flex-direction: row;
+            label{
+                padding: 1vh 1vw;
+                color: white;
+                font-weight: bold;
+        }
+        #name1, #mail1{
+            margin: 1vh 1vw !important;
+        }
+    }
+    .texto{
+        color: white;
+        font-weight: bold;
+    }
+    #txt1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        height: 165px;
+    }
+    .divBoton{
+        margin:1vh auto;
+        #botonEnviar{
+            margin: 2vh auto;
+            padding: 1vh 5vw;
+            border-radius: 10px;
+            background-color: #F62A00;
+            color: white;
+            font-weight: bold;
+            &:hover{
+                background-color: #d16d59 ;
+                transform: scale(0.98);
+            }
+        }
+    }
+}
+}
+
+//Iphone
+.buscanosSection{
+    width: 100%;
+    background-color: #F1F3CE;
+    .contenedor1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        padding: 2vh 0;
+        justify-content: center;
+        .buscanosContainer{
+            display: flex;
+            flex-direction: column;
+            background-color: #F62A00;
+            border-radius: 10px;
+            padding: 11vh 4vw;
+                .buscanosTitulo{
+                    font-size: 2em;
+                    font-weight: bold;
+                    color: #F1F3CE;
+                    text-align: left;
+                    // width: 45%;
+                }
+                .buscanosTxt{
+                    color: #F1F3CE;
+                    font-size: 1em;
+                    text-align: left;
+                    // width: 45%;
+                }
+        }
+        .IphoneDiv{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // .iphoneImg{} 
+                .IphoneIcons{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    z-index: 1;
+                    width: 200px;
+                    height: 50%;
+                    padding-top: 77px;
+                    position: absolute;
+                    .iconDiv{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 auto;
+                        padding: 1vh 1vw;
+                        
+                        &:hover{
+                            transform:scale(0.92);
+                        }
+                        .iIconText{
+                            text-align: center;
+                            font-weight: bold;
+                            color: black;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+
+
